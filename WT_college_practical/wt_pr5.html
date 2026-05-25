@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Web Page</title>
+
+<link rel="stylesheet" href="wt_pr5.css">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- PAGE LOADER -->
+<div id="loader">
+    <div class="spinner-border text-primary"></div>
+</div>
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<a class="navbar-brand" href="#">My Animation Page</a>
+
+<ul class="navbar-nav ml-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HOME SECTION -->
+<section id="home" class="section">
+<div class="container text-center">
+<h1 class="fade-in">Welcome to My Animated Website</h1>
+<p>This page demonstrates different web animations.</p>
+
+<button class="btn btn-primary btn-animate" data-toggle="modal" data-target="#exampleModal">
+Open Popup
+</button>
+
+</div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section bg-light">
+<div class="container text-center">
+<h2 class="scroll-animation">About Animation</h2>
+<p>Animations improve user interaction and visual appeal.</p>
+</div>
+</section>
+
+<!-- IMAGE SLIDER -->
+<section id="gallery" class="section">
+<div class="container">
+
+<h2 class="text-center">Image Slider</h2>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img class="d-block w-100"
+src="https://picsum.photos/800/300?1">
+</div>
+
+<div class="carousel-item">
+<img class="d-block w-100"
+src="https://picsum.photos/800/300?2">
+</div>
+
+<div class="carousel-item">
+<img class="d-block w-100"
+src="https://picsum.photos/800/300?3">
+</div>
+
+</div>
+
+<a class="carousel-control-prev"
+href="#carouselExampleIndicators"
+role="button"
+data-slide="prev">
+
+<span class="carousel-control-prev-icon"></span>
+
+</a>
+
+<a class="carousel-control-next"
+href="#carouselExampleIndicators"
+role="button"
+data-slide="next">
+
+<span class="carousel-control-next-icon"></span>
+
+</a>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contact" class="section bg-light">
+<div class="container">
+
+<h2 class="text-center">Contact Form</h2>
+
+<form class="contact-form">
+
+<input type="text"
+placeholder="Your Name"
+class="form-control">
+
+<br>
+
+<input type="email"
+placeholder="Email"
+class="form-control">
+
+<br>
+
+<button class="btn btn-success btn-animate">
+Submit
+</button>
+
+</form>
+
+</div>
+</section>
+
+<!-- MODAL POPUP -->
+<div class="modal fade" id="exampleModal">
+
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+<div class="modal-header">
+<h5>Animated Popup</h5>
+<button class="close" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body">
+This is a modal popup animation example.
+</div>
+
+</div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
