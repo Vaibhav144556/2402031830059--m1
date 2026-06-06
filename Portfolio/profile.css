@@ -1,0 +1,241 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+*::selection{
+    color: white;
+    background-color: rgb(81, 186, 130);
+    /* background-color: aquamarine; */
+}
+.bg1{
+    background-image: url("profile_bg1.jpeg");
+    min-height: 660px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.phone-box{
+    border: 1px solid white;
+    color: white;
+}
+
+/* navbar scroll effect */
+
+#navbar{
+    transition: all 0.3s ease;
+}
+
+#navbar.scrolled{
+    background-color: white;
+}
+
+#navbar.scrolled .nav-link,
+#navbar.scrolled .navbar-brand,
+#navbar.scrolled i{
+    
+    color: black !important;
+}
+#navbar.scrolled .phone-box{
+    border: 1px solid black;
+    color: black;
+}
+
+.white{
+    color: white;
+}
+.man1{
+    height: 100px;
+    width: 100px;
+    margin-top: 170px;
+}
+.hello{
+    height: 70px;
+    margin-top: 190px;
+}
+.laptop-wrapper{
+    position: relative;
+}
+
+/* white circle */
+.bg_white{
+    position: absolute;
+    background-color: white;
+    height: 350px;
+    width: 350px;
+    top: 150px;
+    left: 70%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* laptop man */
+.laptop_man{
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+/* .laptop_man{
+    position: absolute;
+    z-index: 1;
+    margin-top: 180px;
+    margin-left: 90px;
+} */
+
+
+
+/* .bg_white{
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    height: 350px;
+    width: 350px;
+    top: 140px;
+    right: 14%;
+    border-radius: 50%;
+} */
+
+
+.bg2{
+    background-color: aliceblue;
+    min-height: auto;
+}
+.my_story{
+    height: 150px;
+    background-color: rgb(81, 186, 130);
+}
+.my_story_man{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.bg3{
+    background-color: rgb(239, 241, 244);
+}
+
+.light_green{
+    color:  rgb(81, 186, 130);
+}
+
+.info-box{
+border:1px solid #ddd;
+border-radius:10px;
+overflow:hidden;
+}
+th{
+    border: 1px solid rgb(220, 218, 218);
+}
+
+.info-heading{
+padding:10px;
+font-size:28px;
+font-weight:600;
+}
+
+.info-table{
+margin:0;
+border-collapse: collapse;
+}
+
+.info-table th{
+width:30%;
+color:#1abc9c;
+font-weight:600;
+background:#f5f5f5;
+}
+
+.info-table td{
+color:#555;
+}
+
+.info-table th,
+.info-table td{
+padding:15px 20px;
+border-top:1px solid #eee;
+}
+.f-size{
+    font-size: 60px;
+}
+.box1{
+    width: 350px;
+    border-bottom:1px solid lightgrey ;
+}
+.box2{
+    width: 350px;
+    border-bottom:1px solid lightgrey ;
+    border-left: 1px solid lightgray;
+}
+.box3{
+    width: 350px;
+}
+.box4{
+    width: 350px;
+     border-left: 1px solid lightgray;
+}
+.profile_img{
+    height: 100px;
+    width: 120px;
+}
+.service1{
+   background-color: rgb(81, 186, 130);
+}
+.service_img1{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.bg-service{
+    background-color: rgb(214, 214, 214);
+}
+.gray-border{
+    border: solid 1px lightgray;
+}
+.project1{
+   background-color: rgb(81, 186, 130);
+}
+.project_img1{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.bg-card{
+    background-color: rgb(249, 249, 249);
+}
+.bg-contact{
+    background-color: rgb(243, 243, 243);
+}
+.contact1{
+    border: 1px solid lightgray;
+}
+.icon{
+    border: 1px solid lightgray;
+    min-height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    align-content: center;
+}
+.border-right{
+    border-right: 1px solid lightgray;
+}
+/* Tablet */
+@media (max-width: 991px){
+    .laptop_man{
+        position: relative;
+        top: 0;
+        left: 50%;
+        margin-top: 40px;
+        width: 100%;
+        height: auto;
+    }
+
+/* Tablet + Mobile */
+    .bg_white{
+        display: none;
+    }
+
+}
