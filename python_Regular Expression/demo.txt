@@ -1,0 +1,45 @@
+Regular Expression
+-------------------
+Create a pattern  (validation)
+
+Data :
+	Fname : 
+	email :
+	mobile :
+
+1.Not Blank
+2. only Text
+3. only for numeric value + only 10 digits
+4. text,symbols,number  @gmail.com
+
+module re
+
+how to create pattern
+=====================
+understanding symbols 
+
+1. pattern always string  ""
+2. start : ^
+3. end : $
+4. allowed characters : []
+5. length : {}
+
+Meta Characters
+===============
+[]
+{}
+()
+^
+$
+. any sequences characters
++ one or more
+* zero or more
+? zero or one
+
+basic functions
+==============
+match
+search
+findall
+split
+sub

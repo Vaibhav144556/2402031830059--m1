@@ -1,0 +1,14 @@
+file handling
+
+notepad file -- .txt
+
+command prompt file manage
+
+database -- permenent 
+variable list -- temporary 
+
+open
+close
+read
+write
+append -- mode
