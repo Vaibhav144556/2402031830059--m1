@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>js for loop</title>
+</head>
+<body>
+	<h1>In this code we learn about how to use write for loop in js </h1>
+	<p id="demo"></p>
+	<script>
+		
+		let i;
+		for(i=0;i<=5;i++)
+		{
+			if(i===4){
+				continue;
+			}
+			console.log(i+" hello");
+		}
+		const cars=['BMW','FARARI','LEMBO','NENO','ALTO']
+
+		let len=cars.length
+
+		document.write(len)
+
+		let text="";
+		
+		for(i=0;i<len;i++){
+
+			text += cars[i] + "<br>";
+
+		}
+			document.getElementById('demo').innerHTML=text;
+
+	</script>
+</body>
+</html>

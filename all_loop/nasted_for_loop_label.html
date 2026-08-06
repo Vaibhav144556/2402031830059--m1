@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>label nasted for loop</title>
+</head>
+<body>
+	<h1>In this code  i learn about how to write, use label using nasted for loop in js.</h1>
+	<p id="demo"></p>
+	<script>
+		let text=''
+		label1 : for(let i=0;i<=5;i++){
+			label2 : for(let j=0;j<=5;j++){
+				if(j===3){
+					// continue label1
+					break label1
+					
+				}
+				text += j + '<br>'
+			}
+		}
+		document.getElementById('demo').innerHTML=text;
+	</script>
+</body>
+</html>

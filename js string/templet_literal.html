@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Backtiks``</title>
+</head>
+<body>
+
+	<h1>In this code i goto learn about how to write, templet literal(Using back-tics) in js.</h1>
+	<p id="demo"></p>
+	<script>
+		let name="vaibhav";
+		let age=19;
+
+		let technical_knowledge=['c','c++','java(basic)','html','css','js','python'];
+
+		let js=`<h1>hello java script!</h1><h2>my name is ${name} and i am ${age} years old.</h2>`;
+		js += `<h3>Technical Knowledge :</h3>`;
+
+		for(const x of technical_knowledge){
+
+			js += `<ul><li>${x}</li></ul>`;
+		}
+		// js += `</ul>`;
+
+		document.getElementById('demo').innerHTML= js;
+	</script>
+</body>
+</html>
